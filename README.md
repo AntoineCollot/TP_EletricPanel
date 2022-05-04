@@ -37,7 +37,7 @@ Pour réaliser la physique de la corde, il faut remplir les deux fonctions `Appl
 
 **L'algorithme est le suivant :**
 * Créer un tableau de `RopePoint` qui composeront la corde. Les points possèdent des informations sur leur position actuelle, leur position à la frame précédente et si ils sont libres (les extrémités ne le sont pas).
-* Définir la longueur des segments de la corde. C'est à dire la distance voulue entre un point de la corde et ses deux voisins.
+* Définir la longueur des segments de la corde. C'est à dire la distance voulue entre un point de la corde et chacun de ses deux voisins.
 * Pour chaque point, reproduire le mouvement de la frame précédente fois un multiplicateur pour atténuer légèrement (0.3 marche bien). **Ce comportement est à implémenter dans la fonction `ApplyDisplacement(int i)`.**
 * Pour chaque segment, écarter ou rapprocher les deux points qui le composent pour que la longueur du segment soit exactement celle définie à la création de la corde. On distingue trois cas :
 	* Si les point A et B sont libres, alors les deux points se déplacent de manière équivalente.
