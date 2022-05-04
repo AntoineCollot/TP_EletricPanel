@@ -14,7 +14,7 @@ Les portes logiques doivent hériter d'une classe de base donnée ci dessous :
 	    public abstract bool UseGate();
 	}
 
-On paramétrera à la main les `connectionPins` en entrée via l'éditeur. Certaines portes ont une seule entrée et d'autres deux. Les `connectionPins` possèdent un état 0 ou 1 accessible par leur propriété `myConnectionPin.IsOn`.
+On paramétrera à la main les `connectionPins` en entrée via l'éditeur. Ils correspondent aux slots à gauche de la porte logique auxquels on peut connecter des fils. Certaines portes ont une seule entrée et d'autres deux. Les `connectionPins` possèdent un état 0 ou 1 accessible par leur propriété `myConnectionPin.IsOn`.
 Pour chaque type de porte logique, il faut implémenter la fonction `UseGate()`, qui en fonction de la/des entrées retourne le résultat de l'opération logique.
 Il y a 4 portes logiques à implémenter : **Direct**, **Not**, **And** et **Or**.
 
